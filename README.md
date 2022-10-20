@@ -1,3 +1,3 @@
 # samplecprogs
 
-A list of simple C programs. 
+A collection of some simple C programs. 
