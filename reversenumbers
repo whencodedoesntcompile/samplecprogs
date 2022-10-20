@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+
+
+//Program to reverse the inputed number
+
+//initialize the reverse number as 0
+
+int number;
+int reverse=0;
+
+printf("Enter the number to be reversed\n");
+scanf("%d", &number);
+
+//only reverse if the input is not 0
+
+while ( number != 0 )
+{
+reverse = reverse*10 + number%10;
+number = number/10;
+}
+
+//print the final reversed number
+
+printf("The reversed number is %d", reverse);
+
+return 0;
+}
