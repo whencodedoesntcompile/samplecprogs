@@ -1,0 +1,21 @@
+//Program to calculate Wind Chill Factor from the input Temperature and wind velocity
+
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    float airtemp,velocity; //inputs 
+    float wcf; //output
+    
+    printf("Enter the air temperature in Fahrenheit\n");
+    scanf("%f", &airtemp);
+    
+    printf("Enter the wind velocity in mph\n");
+    scanf("%f", &velocity);
+   
+    wcf=35.74+(0.6215*airtemp)+(0.4275*airtemp-35.75)*pow(velocity,0.16);
+    
+    printf("The Wind Chill Factor is %f\n", wcf);
+    return 0;
+}
