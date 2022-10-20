@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+
+//C program to check a simple condition - whether the entered number is between 1 and 100
+
+int number;
+
+printf("Enter a number between 1 and 100\n");
+
+scanf("%d", &number);
+
+if( number > 0 && number < 101 )
+{
+printf ("You have entered a valid number, it is %d\n", number);
+}
+
+else 
+{
+    printf ("The number entered %d is outside the range of 1 and 100\n", number);
+}
+return 0;
+}
