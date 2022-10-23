@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+
+//Check the greatest of 3 numbers entered and display it
+
+int main()
+{
+    float a,b,c;
+    printf("Enter the 1st number\n");
+    scanf("%f", &a);
+    printf("Enter the 2nd number\n");
+    scanf("%f", &b);
+    printf("Enter the 3rd number\n");
+    scanf("%f", &c);
+    
+    if((a>b) && (b>c))
+    {
+        printf("The 1st number %f is the greatest of 3\n", a);
+        
+    }
+    else if((b>a) && (a>c))
+    {
+        printf("The 2nd number %f is the greatest of 3\n", b);
+    }
+    else
+    {
+        printf("The 3rd number %f is the greatest of 3\n", c);
+    }
+    
+    
+    return 0;
+}
